@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.2s;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --black: #333;
+  --red: rgb(197, 0, 0);
+}
+*::selection {
+  background: var(--black);
+  color: white;
+}
+
+header {
+  background-color: var(--red);
+  padding: 1rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .logo {
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+header .navber a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+#menu-icon {
+  font-size: 2rem;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 1rem 4%;
+  }
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  header .navber {
+    position: absolute;
+    background-color: #333;
+    left: 0;
+    right: 0;
+    top: 100%;
+  }
+  header .navber {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navber.click_id {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header .navber a {
+    color: var(--black);
+    font-size: 2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: block;
+    margin: 1rem 1rem;
+  }
+}

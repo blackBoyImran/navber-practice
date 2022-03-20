@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navber2</title>
+    <link rel="stylesheet" href="css/navber2Style.css">
+    <script src="https://kit.fontawesome.com/2d21fa908a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header>
+    <a href="#" class="logo">LOGO</a>
+    <div id="menu-icon" class="fas fa-bars"></div>
+    <div class="navber">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#home">Home</a>
+            <a href="#home">Home</a>
+            <a href="#home">Home</a>
+            <a href="#home">Home</a>
+            <a href="#home">Home</a>
+        </nav>
+    </div>
+    
+</header>
+
+
+
+
+
+-
+
+
+
+
+
+
+<script>
+
+    let menu = document.querySelector('#menu-icon');
+    let navber = document.querySelector('.navber');
+
+    menu.addEventListener('click', () =>{
+        menu.classList.toggle('fa-rectangle-xmark');////<i class="fa-solid fa-rectangle-xmark"></i>
+        navber.classList.toggle('click_id');
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navber</title>
+    <link rel="stylesheet" href="css/navber1Style.css">
+    <script src="https://kit.fontawesome.com/2d21fa908a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <header class="header" id="header">
+    
+        <a class="logo" href="#">LOGO</a>
+
+            <div id="menu-bar" class="fa-solid fa-bars"></div>
+    
+        <div class="navber">
+            <nav>
+                <a href="#Home">Home</a>
+                <a href="#Home">Home</a>
+                <a href="#Home">Home</a>
+                <a href="#Home">Home</a>
+                <a href="#Home">Home</a>
+                <a href="#Home">Home</a>
+            </nav>    
+
+        </div>
+
+    </header>
+
+<!-- 
+    <script>
+
+        let menu = document.querySelector('#menu-bar');
+        let navber = document.querySelector('.navber');
+    
+        menu.addEventListener('click' , () =>{
+            menu.classList.toggle('fa-xmark');
+            navber.classList.toggle('navId');
+        });
+        
+    </script> -->
+<!--  
+  <script>
+
+    let menu = document.querySelector('#menu-bar');
+    let navber = document.querySelector('.navber');
+
+    menu.addEventListener('click' , () => {
+        menu.classList.toggle('fa-xmark');
+        navber.classList.toggle('navId');
+    });
+
+    
+</script>   -->
+
+
+<script>
+    let menuber = document.querySelector('#menu-bar');
+    let navber = document.querySelector('.navber');
+
+    menuber.addEventListener('click' , () =>{
+        menuber.classList.toggle('fa-circle-xmark');
+        navber.classList.toggle('navId');//<i class="fa-solid fa-circle-xmark"></i>
+    });
+
+    window.scroll = () =>{
+        menuber.classList.remove('fa-circle-xmark');
+        navber.classList.remove('navId');
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
